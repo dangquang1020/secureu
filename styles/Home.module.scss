@@ -1,3 +1,5 @@
+@import "variables";
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -15,6 +17,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  > h1 > a {
+    color: blueviolet;
+    font-family: $font-roboto;
+  }
 }
 
 .footer {
@@ -76,6 +82,7 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 3rem;
+  font-family: $font-lato;
 }
 
 .card {
