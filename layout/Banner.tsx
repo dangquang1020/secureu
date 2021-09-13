@@ -19,7 +19,7 @@ const Banner = () => {
         <Image src={bannerBg} layout="fill" objectFit="cover" />
       </div>
 
-      <ContentWrapper>
+      <ContentWrapper className="flex-col items-start">
         <div className={styles.logo}>
           <Image src={logo} layout='intrinsic' />
         </div>

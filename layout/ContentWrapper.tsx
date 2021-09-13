@@ -8,7 +8,7 @@ const ContentWrapper: React.FC<ContentWrapperProps> = ({
   children
 }) => (
   <div
-    className={`content-wrapper ${className}`}
+    className={`content-wrapper max-w-300 px-5 lg:px-30 flex mx-auto ${className}`}
   >
     {children}
   </div>
