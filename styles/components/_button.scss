@@ -1,0 +1,20 @@
+.button {
+  font-family: $font-roboto;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border-radius: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.btn-danger {
+    color: $pure-white;
+    background-color: $main-red;
+    &:hover,
+    &:active {
+      background-color: $light-red;
+    }
+  }
+}

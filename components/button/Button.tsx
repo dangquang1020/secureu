@@ -1,13 +1,15 @@
+import React from 'react'
 
-
-type IButtonProps = {
+interface IButtonProps {
   className?: string;
-  children: string;
 };
 
-const Button = (props: IButtonProps) => {
+const Button: React.FC<IButtonProps> = ({
+  className = '',
+  ...props
+}) => {
   return (
-    <div className={props.className}>
+    <div className={`button ${className}`}>
       {props.children}
     </div>
   );

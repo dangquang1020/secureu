@@ -1,0 +1,17 @@
+.container {
+  height: 600px;
+  @apply py-5 relative;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 600px;
+  @apply px-5;
+}
+
+.title,
+.description {
+  max-width: 290px;
+}
