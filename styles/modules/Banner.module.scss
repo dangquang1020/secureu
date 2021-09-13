@@ -1,17 +1,55 @@
+@import "../variables";
+
 .container {
   height: 600px;
   @apply py-5 relative;
 }
 
-.content {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  height: 600px;
-  @apply px-5;
+.background {
+  img {
+    object-position: 75% top;
+  }
 }
 
-.title,
+.title {
+  max-width: 290px;
+  font-family: $font-roboto;
+}
 .description {
   max-width: 290px;
+  font-family: $font-lato;
+}
+
+.logo {
+  width: 123px;
+  height: 48px;
+}
+
+@screen lg {
+  .container {
+    height: 676px;
+    @apply py-20;
+  }
+
+  .background {
+    img {
+      object-position: left top;
+    }
+  }
+
+  .logo {
+    width: 177px;
+    height: 69px;
+  }
+
+  .title {
+    max-width: 640px;
+    font-size: 45px;
+    line-height: 56px;
+  }
+  .description {
+    max-width: 420px;
+    font-size: 21px;
+    line-height: 30px;
+  }
 }

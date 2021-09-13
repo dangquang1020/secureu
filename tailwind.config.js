@@ -13,6 +13,9 @@ module.exports = {
         "-10": "-10",
         "-100": "-100",
       },
+      spacing: {
+        "30": "7.5rem"
+      }
     },
   },
   variants: {
