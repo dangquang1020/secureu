@@ -1,9 +1,9 @@
-import type { NextPage } from 'next'
-import React from 'react'
-import { Banner } from '../layout/Banner'
-import { Section } from '../layout/Section'
-import { Footer } from '../layout/Footer'
-import { Meta } from '../layout/Meta'
+import type { NextPage } from "next";
+import React from "react";
+import { Banner } from "../layout/Banner";
+import { Section } from "../layout/Section";
+import { Footer } from "../layout/Footer";
+import { Meta } from "../layout/Meta";
 
 const Home: NextPage = () => {
   return (
@@ -11,12 +11,12 @@ const Home: NextPage = () => {
       <Meta></Meta>
 
       <Section>
-        <Banner></Banner>
+        <Banner />
       </Section>
 
-      <Footer></Footer>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
