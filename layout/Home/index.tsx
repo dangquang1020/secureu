@@ -1,5 +1,6 @@
 import { Banner } from "../Banner";
 import { GetInTouch } from "./GetInTouch";
+import { OurValues } from "./OurValues";
 import { SecureUAgent } from "./SecureUAgent";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Banner />
       <SecureUAgent />
+      <OurValues />
       <GetInTouch />
     </>
   );

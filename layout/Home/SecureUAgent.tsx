@@ -48,10 +48,10 @@ const Item: React.FC<ItemProps> = ({ item }) => {
       className={`flex flex-col items-center text-center text-dark-liver mb-12 md:mb-0 md:${item.maxWidth}`}
     >
       <Image src={item.image} alt="Error" />
-      <span className="mt-9 mb-4 font-medium text-21/16 font-roboto">
+      <span className="mt-9 mb-4 font-medium text-lg md:text-21/16 font-roboto">
         {item.title}
       </span>
-      <p className="text-base font-lato">{item.content}</p>
+      <p className="text-14/16 md:text-base font-lato">{item.content}</p>
     </div>
   );
 };
@@ -59,11 +59,11 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 const SecureUAgent = () => {
   return (
     <Section className="max-w-screen-lg text-center pt-28 md:pt-31 px-8 md:px-0">
-      <span className="text-3xl font-medium text-light-blue font-roboto">
+      <span className="text-26/16 px-2 md:text-3xl font-medium text-light-blue font-roboto">
         Want to be a SecureU agent?
       </span>
 
-      <div className="flex flex-col md:flex-row md:justify-between mt-12 mb-16 md:mb-24">
+      <div className="flex flex-col md:flex-row md:justify-between mt-12 mb-4 md:mb-24">
         {ITEMS.map((item, index) => (
           <Item key={index} item={item} />
         ))}
