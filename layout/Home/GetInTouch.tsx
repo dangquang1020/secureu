@@ -8,8 +8,8 @@ const GetInTouch = () => {
     <Section className="bg-dark-blue py-16 md:py-24">
       <div className="max-w-150 mx-auto">
         <div className="text-white text-center">
-          <span className="text-3xl">Get in touch</span>
-          <p className="text-base mt-8 mb-16 mx-16">
+          <span className="text-3xl font-medium font-roboto">Get in touch</span>
+          <p className="text-base mt-8 mb-16 mx-5 md:mx-16 font-lato">
             If you have any questions please reach out to us directly through
             the website or mobile app. Ask about our vetting process, how to
             sign up as an agent, become a client and more.
@@ -36,9 +36,7 @@ const GetInTouch = () => {
             />
 
             <div className="flex justify-center mt-12 md:mt-24">
-              <Button className="text-white bg-salmon hover:opacity-75 text-center">
-                Submit
-              </Button>
+              <Button className="btn-danger">Submit</Button>
             </div>
           </form>
         </div>

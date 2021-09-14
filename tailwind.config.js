@@ -33,7 +33,9 @@ module.exports = {
       mercury: "#E5E5E5",
       salmon: "#ED796F",
       "dark-blue": "#1D1D3F",
-      "light-blue": "#598EEB",
+      "light-blue": "#658DE4",
+      "dark-light-blue": "#598EEB",
+      "dark-liver": "#4F4F4F",
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
@@ -45,11 +47,16 @@ module.exports = {
       base: "1rem",
       lg: "1.125rem",
       xl: "1.25rem",
+      "21/16": "1.3125rem",
       "2xl": "1.5rem",
       "3xl": "1.875rem",
       "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "4rem",
+    },
+    fontFamily: {
+      lato: ["Lato", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     textColor: (theme) => theme("colors"),
     opacity: {
@@ -68,6 +75,8 @@ module.exports = {
       150: "37.5rem",
       240: "60rem",
       300: "75rem",
+      "2/5": "24%",
+      "29/100": "29%",
       ...breakpoints(theme("screens")),
     }),
     borderColor: (theme) => ({
@@ -75,6 +84,13 @@ module.exports = {
     }),
     placeholderOpacity: (theme) => ({
       ...theme("opacity"),
+    }),
+    placeholderColor: (theme) => ({
+      ...theme("colors"),
+    }),
+    padding: (theme) => ({
+      ...theme("spacing"),
+      31: "7.75rem",
     }),
   },
   variants: {

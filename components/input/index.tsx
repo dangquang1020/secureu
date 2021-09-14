@@ -10,7 +10,7 @@ interface IInputProps
 
 const Input: React.FC<IInputProps> = ({ variant, className, ...props }) => {
   const commonClass =
-    "w-full py-3 px-5 border border-light-blue outline-none bg-transparent text-white font-black text-13/16";
+    "w-full py-3 px-5 border border-dark-light-blue font-roboto outline-none bg-transparent text-white font-black text-13/16 placeholder-white placeholder-opacity-35";
 
   if (variant === "textarea") {
     return (
