@@ -1,16 +1,5 @@
 @import "../variables";
 
-.container {
-  height: 600px;
-  @apply py-5 relative;
-}
-
-.background {
-  img {
-    object-position: 75% top;
-  }
-}
-
 .title {
   max-width: 290px;
   font-family: $font-roboto;
@@ -26,17 +15,6 @@
 }
 
 @screen lg {
-  .container {
-    height: 676px;
-    @apply py-20;
-  }
-
-  .background {
-    img {
-      object-position: left top;
-    }
-  }
-
   .logo {
     width: 177px;
     height: 69px;

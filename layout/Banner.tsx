@@ -5,8 +5,8 @@ import { ContentWrapper } from '../layout/ContentWrapper';
 import { SectionTitle } from '../components/text/SectionTitle';
 import { SectionDescription } from '../components/text/SectionDescription';
 
-import bannerBg from '../public/images/banner-bg.png';
-import logo from '../public/images/logo-white-trans.png';
+import bannerBg from '../assets/images/banner-bg.png';
+import logo from '../assets/images/logo-white-trans.png';
 
 const Banner = () => {
   const title1 = "Personal safety on demand."
@@ -14,9 +14,9 @@ const Banner = () => {
   const description = "SecureU is an on demand safety app that allows users to order personal security agents for residential, business, private event(s), travel security, and asset security."
 
   return (
-    <div className={styles.container}>
-      <div className={`-z-1 absolute w-full h-full top-0 left-0 ${styles.background}`}>
-        <Image src={bannerBg} layout="fill" objectFit="cover" />
+    <div className="relative py-5 lg:py-20 h-152 lg:h-168">
+      <div className={`-z-1 absolute w-full h-full top-0 left-0`}>
+        <Image src={bannerBg} layout="fill" objectFit="cover" className="object-75-top lg:object-left-center" />
       </div>
 
       <ContentWrapper className="flex-col items-start">
