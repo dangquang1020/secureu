@@ -75,6 +75,7 @@ module.exports = {
       xs: "0.75rem",
       "13/16": "0.8125rem",
       md: "0.875rem",
+      "14/16": "0.875rem",
       base: "1rem",
       lg: "1.125rem",
       xl: "1.25rem",
@@ -83,6 +84,8 @@ module.exports = {
       "26/16": "1.625rem",
       "3xl": "1.875rem",
       "4xl": "2.25rem",
+      "37/16": "2.3125rem",
+      "44/16": "2.75rem",
       "5xl": "3rem",
       "6xl": "4rem",
     },
@@ -102,10 +105,13 @@ module.exports = {
       100: "1",
     },
     maxWidth: (theme, { breakpoints }) => ({
+      52: "13rem",
       64: "16rem",
       72: "18rem",
+      xs: "20rem",
       92: "23rem",
       96: "24rem",
+      sm: "24rem",
       100: "25rem",
       124: "31rem",
       150: "37.5rem",
@@ -126,6 +132,7 @@ module.exports = {
     }),
     padding: (theme) => ({
       ...theme("spacing"),
+      auto: "auto",
       31: "7.75rem",
     }),
     positions: {
