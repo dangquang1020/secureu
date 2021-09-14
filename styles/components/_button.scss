@@ -17,4 +17,35 @@
       background-color: $light-red;
     }
   }
+
+  &.btn-primary,
+  &.btn-default {
+    border-radius: 12px;
+    font-family: $font-lato;
+    font-weight: bold;
+    font-size: 6.51px;
+    line-height: 7px;
+    color: $pure-white;
+    padding: 7px 12px;
+    letter-spacing: 1.18px;
+  }
+
+  &.btn-primary {
+    background-color: $light-blue;
+  }
+
+  &.btn-default {
+    border: 1px solid $midnight-blue;
+    color: $midnight-blue;
+  }
+
+  @screen lg {
+    &.btn-primary,
+    &.btn-default {
+      font-size: 7.43px;
+      line-height: 8px;
+      padding: 8px 13px;
+      letter-spacing: 1.35px;
+    }
+  }
 }

@@ -2,16 +2,18 @@ import React from 'react'
 
 interface IButtonProps {
   className?: string;
+  onClick?: Function
 };
 
 const Button: React.FC<IButtonProps> = ({
   className = '',
+  onClick,
   ...props
 }) => {
   return (
-    <div className={`button ${className}`}>
+    <button className={`button ${className}`} onClick={(e) => onClick ? onClick(e) : {}}>
       {props.children}
-    </div>
+    </button>
   );
 };
 
