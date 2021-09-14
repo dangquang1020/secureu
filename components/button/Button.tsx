@@ -1,15 +1,19 @@
+import React from 'react'
 
-
-type IButtonProps = {
+interface IButtonProps {
   className?: string;
-  children: string;
+  onClick?: Function
 };
 
-const Button = (props: IButtonProps) => {
+const Button: React.FC<IButtonProps> = ({
+  className = '',
+  onClick,
+  ...props
+}) => {
   return (
-    <div className={props.className}>
+    <button className={`button ${className}`} onClick={(e) => onClick ? onClick(e) : {}}>
       {props.children}
-    </div>
+    </button>
   );
 };
 

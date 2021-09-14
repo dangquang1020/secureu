@@ -1,17 +1,9 @@
-import { ReactNode } from 'react';
+interface SectionProps {
+  className?: string;
+}
 
-type ISectionProps = {
-  yPadding?: string;
-  children: ReactNode;
-};
-
-const Section = (props: ISectionProps) => (
-  <div
-    className={`max-w-screen-lg mx-auto px-3 ${props.yPadding ? props.yPadding : 'py-16'
-      }`}
-  >
-    {props.children}
-  </div>
+const Section: React.FC<SectionProps> = ({ className = "", children }) => (
+  <div className={`w-full mx-auto ${className}`}>{children}</div>
 );
 
 export { Section };

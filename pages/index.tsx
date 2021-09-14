@@ -1,23 +1,22 @@
-import type { NextPage } from 'next'
-import React from 'react'
-import styles from '../styles/Home.module.scss'
-import { Banner } from '../layout/Banner'
-import { Section } from '../layout/Section'
-import { Footer } from '../layout/Footer'
-import { Meta } from '../layout/Meta'
+import type { NextPage } from "next";
+import React from "react";
+import { Section } from "../layout/Section";
+import { Footer } from "../layout/Footer";
+import { Meta } from "../layout/Meta";
+import { Home } from "../layout/Home";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="main-container">
       <Meta></Meta>
 
       <Section>
-        <Banner></Banner>
+        <Home />
       </Section>
 
-      <Footer></Footer>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default HomePage;

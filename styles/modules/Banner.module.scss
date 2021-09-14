@@ -1,0 +1,33 @@
+@import "../variables";
+
+.title {
+  max-width: 290px;
+  font-family: $font-roboto;
+}
+.description {
+  max-width: 290px;
+  font-family: $font-lato;
+}
+
+.logo {
+  width: 123px;
+  height: 48px;
+}
+
+@screen lg {
+  .logo {
+    width: 177px;
+    height: 69px;
+  }
+
+  .title {
+    max-width: 640px;
+    font-size: 45px;
+    line-height: 56px;
+  }
+  .description {
+    max-width: 420px;
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
