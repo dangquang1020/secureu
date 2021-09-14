@@ -21,8 +21,10 @@ const Footer = () => (
 
         <div className="flex items-center text-white md:max-w-100 md:mx-0 mx-auto">
           <div className="flex flex-col mr-8">
-            <span className="text-13/16 font-black opacity-35">ABOUT</span>
-            <p className="text-mercury text-xs max-w-64">
+            <span className="text-13/16 font-black opacity-35 font-roboto">
+              ABOUT
+            </span>
+            <p className="text-mercury text-xs max-w-64 font-lato">
               SecureU was founded by Sholomi Farrell, a military and law
               enforcement veteranN who has over 15 years in the security
               industry. Sholomi understands the need for on demand security and
