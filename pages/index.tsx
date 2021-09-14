@@ -1,17 +1,17 @@
 import type { NextPage } from "next";
 import React from "react";
-import { Banner } from "../layout/Banner";
 import { Section } from "../layout/Section";
 import { Footer } from "../layout/Footer";
 import { Meta } from "../layout/Meta";
+import { Home } from "../layout/Home";
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
     <div className="main-container">
       <Meta></Meta>
 
       <Section>
-        <Banner />
+        <Home />
       </Section>
 
       <Footer />
@@ -19,4 +19,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default HomePage;
