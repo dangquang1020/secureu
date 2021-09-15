@@ -44,26 +44,22 @@ const ITEMS: Item[] = [
 
 interface ItemProps extends AllHTMLAttributes<HTMLDivElement> {
   item: Item;
-  index?: number;
-  activeIndex?: number;
+  index: number;
+  activeIndex: number;
+  isSlider?: boolean;
 }
 
 const Item: React.FC<ItemProps> = ({
   item,
-  index = -1,
+  index,
   activeIndex,
+  isSlider,
   ...props
 }) => {
   return (
     <div
       className={`relative text-white cursor-pointer mb-16 md:mb-0 ${
-        index !== -1
-          ? index === 0
-            ? "mr-14"
-            : index === 2
-            ? "mr-8"
-            : "ml-4"
-          : ""
+        !isSlider ? (index === 0 ? "mr-14" : index === 2 ? "mr-8" : "ml-4") : ""
       }`}
       {...props}
     >
@@ -79,7 +75,7 @@ const Item: React.FC<ItemProps> = ({
         {item.content}
       </p>
 
-      {index === activeIndex && (
+      {!isSlider && index === activeIndex && (
         <div
           className={`circle-dot absolute top-0 top-4 ${item.circleClass}`}
         />
@@ -90,6 +86,7 @@ const Item: React.FC<ItemProps> = ({
 
 const PhoneMockup = () => {
   const [activeIndex, setActiveIndex] = React.useState<number>(0);
+  const [activeIndexMobile, setActiveIndexMobile] = React.useState<number>(0);
 
   const pagination = {
     clickable: true,
@@ -120,10 +117,16 @@ const PhoneMockup = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
+          onSlideChange={({ realIndex }) => setActiveIndexMobile(realIndex)}
         >
           {ITEMS.map((item, index) => (
             <SwiperSlide key={index}>
-              <Item item={item} />
+              <Item
+                isSlider
+                item={item}
+                index={index}
+                activeIndex={activeIndexMobile}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
