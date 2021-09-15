@@ -48,8 +48,8 @@
 
     &.second,
     &.fourth {
-      right: 100%;
-      width: 42px;
+      right: calc(100% + 10px);
+      width: 30px;
     }
 
     &.left {
