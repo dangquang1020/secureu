@@ -5,13 +5,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import "variables";
 @import "components/index";
+@import "swiper/css";
+@import "swiper/css/bundle";
+@import "swiper/css/pagination";
+
+@layer components {
+  .circle-dot {
+    height: 1px;
+    background-color: #658de4;
+
+    @apply w-full relative;
+
+    &::after {
+      content: "";
+      width: 13px;
+      height: 13px;
+      right: -13px;
+      top: -6px;
+
+      @apply absolute border border-light-blue rounded-full;
+    }
+
+    &::before {
+      content: "";
+      width: 7.5px;
+      height: 7.5px;
+      right: -10.25px;
+      top: -3px;
+
+      @apply absolute bg-light-blue rounded-full;
+    }
+
+    &.first {
+      right: -3rem;
+      width: calc(100% - 65px);
+    }
+
+    &.third {
+      right: -1.5rem;
+      width: calc(100% - 132px);
+    }
+
+    &.second,
+    &.fourth {
+      right: 100%;
+      width: 42px;
+    }
+
+    &.left {
+      &::after {
+        left: -13px;
+      }
+
+      &::before {
+        left: -10.25px;
+      }
+    }
+  }
+
+  .custom-dot {
+    &.swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #b5b5b5;
+
+      @apply opacity-100;
+    }
+
+    &.swiper-pagination-bullet-active {
+      @apply border border-light-blue bg-transparent relative;
+
+      &::after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @apply absolute bg-light-blue rounded-full;
+      }
+    }
+  }
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {

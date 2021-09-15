@@ -19,11 +19,12 @@ module.exports = {
         19: "4.625rem",
         26: "6.5rem",
         30: "7.5rem",
+        "14/100": "14%",
         "3/4": "75%",
         "3/5": "60%",
       },
       height: {
-        "2.5": "0.625rem",
+        2.5: "0.625rem",
         15: "3.75rem",
         50: "12.5rem",
         54: "13.5rem",
@@ -31,10 +32,10 @@ module.exports = {
         100: "25rem",
         124: "31rem",
         152: "38rem",
-        168: "42rem"
+        168: "42rem",
       },
       width: {
-        "2.5": "0.625rem",
+        2.5: "0.625rem",
         15: "3.75rem",
         50: "12.5rem",
         58: "14.5rem",
@@ -42,7 +43,10 @@ module.exports = {
       },
       boxShadow: {
         grey: "0 1px 3px rgba(119,119,119,0.5)",
-      }
+      },
+      gap: {
+        92: "23rem",
+      },
     },
     screens: {
       xs: "414px",
@@ -70,7 +74,7 @@ module.exports = {
       ...theme("colors"),
     }),
     fontSize: {
-      "xxs": "0.5rem",
+      xxs: "0.5rem",
       sm: "0.625rem",
       xs: "0.75rem",
       "13/16": "0.8125rem",
@@ -133,22 +137,23 @@ module.exports = {
     padding: (theme) => ({
       ...theme("spacing"),
       auto: "auto",
+      "14/16": "0.875rem",
       31: "7.75rem",
     }),
     positions: {
-      bottom: 'bottom',
-      center: 'center',
-      left: 'left',
-      'left-bottom': 'left bottom',
-      'left-top': 'left top',
-      'left-center': 'left center',
-      right: 'right',
-      'right-bottom': 'right bottom',
-      'right-top': 'right top',
-      top: 'top',
-      '75-top': '75% top'
+      bottom: "bottom",
+      center: "center",
+      left: "left",
+      "left-bottom": "left bottom",
+      "left-top": "left top",
+      "left-center": "left center",
+      right: "right",
+      "right-bottom": "right bottom",
+      "right-top": "right top",
+      top: "top",
+      "75-top": "75% top",
     },
-    objectPosition: theme => theme('positions'),
+    objectPosition: (theme) => theme("positions"),
   },
   variants: {
     extend: {},
