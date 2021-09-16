@@ -122,7 +122,7 @@ module.exports = {
       240: "60rem",
       300: "75rem",
       "2/5": "24%",
-      "29/100": "29%",
+      "1/3": "33.3333%",
       ...breakpoints(theme("screens")),
     }),
     borderColor: (theme) => ({

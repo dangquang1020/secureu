@@ -56,7 +56,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 
 const OurValues = () => {
   return (
-    <Section className="relative px-6 md:px-0">
+    <Section className="relative px-5 md:px-0">
       <Image
         src={OurValuesBg}
         alt="OurValuesBg"
@@ -65,7 +65,7 @@ const OurValues = () => {
         className="-z-1"
       />
 
-      <div className="py-16 md:py-31 ml-31 max-w-screen-lg mx-auto">
+      <div className="py-16 md:py-31 ml-31 max-w-screen-lg mx-auto md:pl-8">
         <span className="text-white text-26/16 md:text-3xl font-medium font-roboto">
           Our values are:
         </span>

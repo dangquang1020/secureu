@@ -59,7 +59,13 @@ const Item: React.FC<ItemProps> = ({
   return (
     <div
       className={`relative text-white cursor-pointer mb-16 md:mb-0 ${
-        !isSlider ? (index === 0 ? "mr-14" : index === 2 ? "mr-8" : "ml-4") : ""
+        !isSlider
+          ? index === 0
+            ? "md:mr-7 lg:mr-14"
+            : index === 2
+            ? "md:mr-7 lg:mr-8"
+            : "md:ml-8 lg:ml-4"
+          : ""
       }`}
       {...props}
     >
@@ -90,13 +96,14 @@ const PhoneMockup = () => {
 
   const pagination = {
     clickable: true,
-    renderBullet: function (index: number, className: any) {
-      return `<span class='custom-dot ${className}'></span>`;
+    renderBullet: function () {
+      return `<span class='custom-bullet swiper-pagination-bullet'></span>`;
     },
+    bulletActiveClass: "swiper-pagination-bullet-active",
   };
   return (
     <Section className="relative bg-dark pt-14 md:py-20">
-      <div className="hidden max-w-screen-lg mx-auto pl-8 md:grid md:grid-cols-2 md:gap-y-16 md:gap-x-92">
+      <div className="hidden max-w-screen-lg lg:mx-auto md:mx-5 lg:pl-8 md:grid md:grid-cols-2 md:gap-y-16 md:gap-x-80 lg:gap-x-92">
         {ITEMS.map((item, index) => (
           <Item
             key={index}
@@ -132,7 +139,7 @@ const PhoneMockup = () => {
         </Swiper>
       </div>
 
-      <div className="relative flex justify-center md:absolute md:left-1/2 transform translate-y-14/100 -mt-20 md:mt-0 md:-translate-x-1/2 md:-translate-y-2 md:-top-20">
+      <div className="relative flex justify-center md:absolute md:left-1/2 md:top-1/2 transform translate-y-14/100 -mt-20 md:mt-0 md:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-y-2 lg:-top-20">
         <Image src={Phone} alt="Phone" />
       </div>
     </Section>

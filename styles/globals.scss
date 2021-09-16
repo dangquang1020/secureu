@@ -37,19 +37,40 @@
     }
 
     &.first {
-      right: -3rem;
-      width: calc(100% - 65px);
+      @screen md {
+        right: -0.8rem;
+        width: calc(100% - 98px);
+      }
+
+      @screen lg {
+        right: -3rem;
+        width: calc(100% - 65px);
+      }
     }
 
     &.third {
-      right: -1.5rem;
-      width: calc(100% - 132px);
+      @screen md {
+        right: -1rem;
+        width: calc(100% - 140px);
+      }
+
+      @screen lg {
+        right: -1.5rem;
+        width: calc(100% - 132px);
+      }
     }
 
     &.second,
     &.fourth {
-      right: calc(100% + 10px);
-      width: 30px;
+      @screen md {
+        width: 10px;
+        right: calc(100% + 5px);
+      }
+
+      @screen lg {
+        width: 30px;
+        right: calc(100% + 10px);
+      }
     }
 
     &.left {
@@ -62,8 +83,10 @@
       }
     }
   }
+}
 
-  .custom-dot {
+@layer components {
+  .custom-bullet {
     &.swiper-pagination-bullet {
       width: 12px;
       height: 12px;
