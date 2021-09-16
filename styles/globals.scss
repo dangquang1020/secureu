@@ -1,13 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
 @import "variables";
 @import "components/index";
 @import "swiper/css";
 @import "swiper/css/bundle";
 @import "swiper/css/pagination";
+
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/fonts/Lato-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../assets/fonts/Roboto-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../assets/fonts/Roboto-Black.ttf") format("ttf");
+  font-weight: 900;
+  font-style: normal;
+}
 
 @layer components {
   .circle-dot {

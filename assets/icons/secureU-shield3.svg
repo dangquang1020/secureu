@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="61px" viewBox="0 0 52 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1 copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SecureU-Landing-Page-V4b" transform="translate(-119.000000, -3351.000000)">
+            <g id="Values" transform="translate(0.000000, 2892.000000)">
+                <g id="1-copy" transform="translate(120.000000, 460.000000)">
+                    <g id="shield-pin-copy" stroke="#658DE4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M0,8.32241872 L0,28.2872015 C0,41.2050349 7.77949415,52.7888423 19.5692494,57.4267643 L22.238471,58.4756103 C24.0160111,59.1747966 25.9839889,59.1747966 27.761529,58.4756103 L30.4307506,57.4267643 C42.2205058,52.7888423 50,41.2050349 50,28.2872015 L50,8.32241872 C50.009952,6.78780636 49.1387809,5.389898 47.7742808,4.75109823 C40.5944024,1.54632107 32.8336754,-0.0718629398 25,0.00244816263 C17.1663246,-0.0718629398 9.40559756,1.54632107 2.22571921,4.75109823 C0.861219146,5.389898 -0.00995204297,6.78780636 0,8.32241872 Z" id="Path"></path>
+                    </g>
+                    <text id="3" font-family="Roboto-Light, Roboto" font-size="36" font-weight="300" fill="#658DE4">
+                        <tspan x="14.5244141" y="40">3</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

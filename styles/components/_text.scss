@@ -1,9 +1,15 @@
 .section-title {
-  font-family: $font-roboto;
+  font-family: $font-roboto-medium;
   font-size: 38px;
   line-height: 46px;
-  font-weight: 500;
   color: $pure-white;
+
+  @screen lg {
+    &.large {
+      font-size: 45px;
+      line-height: 56px;
+    }
+  }
 }
 
 .section-description {

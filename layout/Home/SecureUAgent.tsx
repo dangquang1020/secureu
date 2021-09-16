@@ -3,9 +3,9 @@ import Image from "next//image";
 
 import { Section } from "../Section";
 
-import RatingStar from "../../assets/images/rating-star.png";
-import CashPayment from "../../assets/images/cash-payment.png";
-import NotesClock from "../../assets/images/notes-clock.png";
+import RatingStar from "../../assets/icons/rating-star.svg";
+import CashPayment from "../../assets/icons/cash-payment.svg";
+import NotesClock from "../../assets/icons/notes-clock.svg";
 
 interface Item {
   title: string;
@@ -20,14 +20,14 @@ const ITEMS: Item[] = [
     image: RatingStar,
     content:
       "Showcase your reliability and professionalism through our rating system. Clients tend to choose top rated agents more frequently for security jobs.",
-    maxWidth: "lg:max-w-1/3 lg:px-6",
+    maxWidth: "lg:max-w-1/3 lg:px-4",
   },
   {
     title: "Instant pay option",
     image: CashPayment,
     content:
       "Agents have the ability to get paid as soon as their detail has been completed and approved.",
-    maxWidth: "lg:max-w-2/5 md:px-7 lg:px-0",
+    maxWidth: "lg:max-w-1/4 md:px-7 lg:px-0",
   },
   {
     title: "Create your own schedule",
@@ -48,10 +48,12 @@ const Item: React.FC<ItemProps> = ({ item }) => {
       className={`flex flex-col items-center text-center text-dark-liver mb-12 mx-5 md:mx-0 md:mb-0 ${item.maxWidth}`}
     >
       <Image src={item.image} alt="Error" />
-      <span className="mt-9 mb-4 font-medium text-lg md:text-21/16 font-roboto">
+      <span className="mt-9 mb-4 text-lg md:text-21/16 font-roboto-medium">
         {item.title}
       </span>
-      <p className="text-14/16 md:text-base font-lato">{item.content}</p>
+      <p className="text-14/16 md:text-base font-lato leading-snug">
+        {item.content}
+      </p>
     </div>
   );
 };
@@ -59,7 +61,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 const SecureUAgent = () => {
   return (
     <Section className="max-w-screen-lg text-center pt-28 md:pt-31 md:px-0">
-      <span className="text-26/16 px-2 md:text-3xl font-medium text-light-blue font-roboto">
+      <span className="text-26/16 px-2 md:text-3xl text-light-blue font-roboto-medium">
         Want to be a SecureU agent?
       </span>
 

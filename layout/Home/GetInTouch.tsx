@@ -8,10 +8,10 @@ const GetInTouch = () => {
     <Section className="bg-dark-blue py-16 md:py-24">
       <div className="max-w-150 mx-auto">
         <div className="text-white text-center">
-          <span className="text-26/16 md:text-3xl font-medium font-roboto">
+          <span className="text-26/16 md:text-3xl font-roboto-medium">
             Get in touch
           </span>
-          <p className="text-14/16 md:text-base mt-8 mb-16 mx-5 md:mx-16 font-lato">
+          <p className="text-14/16 md:text-base mt-8 mb-16 mx-5 md:mx-16 font-lato leading-snug">
             If you have any questions please reach out to us directly through
             the website or mobile app. Ask about our vetting process, how to
             sign up as an agent, become a client and more.

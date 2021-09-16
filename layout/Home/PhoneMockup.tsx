@@ -70,7 +70,7 @@ const Item: React.FC<ItemProps> = ({
       {...props}
     >
       <span
-        className={`text-lg md:text-21/16 font-medium font-roboto ${
+        className={`text-lg md:text-21/16 font-roboto-medium ${
           index === activeIndex ? "text-light-blue" : ""
         }`}
       >
