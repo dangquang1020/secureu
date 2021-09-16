@@ -4,8 +4,9 @@ import { Section } from "./Section";
 import { ContentWrapper } from "./ContentWrapper";
 
 import Logo from "../assets/images/log-white-trans.png";
-import Example from "../assets/images/example.jpg";
-import GGPlay from "../assets/images/gg-play.png";
+import Example from "../assets/images/sholomi-pic.png";
+import GGPlay from "../assets/images/google-play-store.png";
+import AppStore from "../assets/images/apple-store.png";
 
 const Footer = () => (
   <Section>
@@ -21,10 +22,10 @@ const Footer = () => (
 
         <div className="flex items-center text-white md:max-w-100 md:mx-0 mx-auto">
           <div className="flex flex-col mr-8">
-            <span className="text-13/16 font-black opacity-35 font-roboto">
+            <span className="text-13/16 opacity-35 font-roboto-black">
               ABOUT
             </span>
-            <p className="text-mercury text-xs max-w-64 font-lato">
+            <p className="text-mercury text-xs max-w-64 font-lato leading-normal mt-3">
               SecureU was founded by Sholomi Farrell, a military and law
               enforcement veteranN who has over 15 years in the security
               industry. Sholomi understands the need for on demand security and
@@ -42,8 +43,8 @@ const Footer = () => (
         </div>
 
         <div className="flex md:justify-start justify-between md:flex-col md:pl-16 lg:pl-32 my-10 md:my-0">
-          <Image src={GGPlay} alt="Logo" width={172} height={66} />
-          <Image src={GGPlay} alt="Logo" width={172} height={66} />
+          <Image src={GGPlay} alt="Logo" />
+          <Image src={AppStore} alt="Logo" />
         </div>
       </ContentWrapper>
     </div>

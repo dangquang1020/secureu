@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="98px" height="98px" viewBox="0 0 98 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>streamline-icon-notes-clock@150x150</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="SecureU-Landing-Page-V4b" transform="translate(-911.000000, -2548.000000)" stroke-width="4">
+            <g id="Agent" transform="translate(1.000000, 2267.000000)">
+                <g id="List" transform="translate(126.500000, 281.000000)">
+                    <g id="streamline-icon-notes-clock@150x150" transform="translate(785.500000, 2.000000)">
+                        <path d="M44,69 C44,82.8071187 55.1928813,94 69,94 C82.8071187,94 94,82.8071187 94,69 C94,55.1928813 82.8071187,44 69,44 C55.1928813,44 44,55.1928813 44,69 Z" id="Path" stroke="#658DE4"></path>
+                        <polyline id="Path" stroke="#658DE4" points="80 69 69 69 69 58"></polyline>
+                        <path d="M31.2505917,80.9981061 L6.25295826,80.9981061 C4.58310863,81.0397015 2.96926646,80.3946041 1.78813824,79.2133939 C0.607010023,78.0321837 -0.0380426089,76.4182295 0.00354991465,74.7482639 L0.00354991465,12.6956643 C-0.113555453,9.12310962 2.68105882,6.12893836 6.25295826,6 L68.7470417,6 C72.3189412,6.12893836 75.1135555,9.12310962 74.9964501,12.6956643 L74.9964501,30.9993687" id="Path" stroke="#1D1D3D"></path>
+                        <line x1="19" y1="0" x2="19" y2="19" id="Path" stroke="#1D1D3D"></line>
+                        <line x1="38" y1="0" x2="38" y2="19" id="Path" stroke="#1D1D3D"></line>
+                        <line x1="56" y1="0" x2="56" y2="19" id="Path" stroke="#1D1D3D"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

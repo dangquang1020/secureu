@@ -12,7 +12,7 @@ const SecureUMobileApp = () => {
         <div className="w-full h-full flex flex-col md:flex-row">
           <div className="w-full md:w-5/12 pl-5 lg:pl-0 flex flex-col items-start justify-center mt-14 mb-17">
             <SectionTitle
-              className="max-w-64 mb-8"
+              className="max-w-64 mb-8 large"
               title="SecureU Mobile App"
             />
             <SectionDescription

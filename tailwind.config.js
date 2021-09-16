@@ -90,12 +90,15 @@ module.exports = {
       "4xl": "2.25rem",
       "37/16": "2.3125rem",
       "44/16": "2.75rem",
+      "45/16": "2.8125rem",
       "5xl": "3rem",
       "6xl": "4rem",
     },
     fontFamily: {
       lato: ["Lato", "sans-serif"],
-      roboto: ["Roboto", "sans-serif"],
+      "roboto-light": ["Roboto-Light", "sans-serif"],
+      "roboto-medium": ["Roboto-Medium", "sans-serif"],
+      "roboto-black": ["Roboto-Black", "sans-serif"],
     },
     textColor: (theme) => theme("colors"),
     opacity: {
@@ -121,8 +124,8 @@ module.exports = {
       150: "37.5rem",
       240: "60rem",
       300: "75rem",
-      "2/5": "24%",
-      "29/100": "29%",
+      "1/4": "25%",
+      "1/3": "33.3333%",
       ...breakpoints(theme("screens")),
     }),
     borderColor: (theme) => ({
