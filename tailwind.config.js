@@ -19,11 +19,12 @@ module.exports = {
         19: "4.625rem",
         26: "6.5rem",
         30: "7.5rem",
+        "14/100": "14%",
         "3/4": "75%",
         "3/5": "60%",
       },
       height: {
-        "2.5": "0.625rem",
+        2.5: "0.625rem",
         15: "3.75rem",
         50: "12.5rem",
         54: "13.5rem",
@@ -31,10 +32,10 @@ module.exports = {
         100: "25rem",
         124: "31rem",
         152: "38rem",
-        168: "42rem"
+        168: "42rem",
       },
       width: {
-        "2.5": "0.625rem",
+        2.5: "0.625rem",
         15: "3.75rem",
         50: "12.5rem",
         58: "14.5rem",
@@ -42,7 +43,10 @@ module.exports = {
       },
       boxShadow: {
         grey: "0 1px 3px rgba(119,119,119,0.5)",
-      }
+      },
+      gap: {
+        92: "23rem",
+      },
     },
     screens: {
       xs: "414px",
@@ -70,8 +74,9 @@ module.exports = {
       ...theme("colors"),
     }),
     fontSize: {
-      "xxs": "0.5rem",
+      xxs: "0.5rem",
       sm: "0.625rem",
+      "11/16": "0.6875rem",
       xs: "0.75rem",
       "13/16": "0.8125rem",
       md: "0.875rem",
@@ -86,12 +91,15 @@ module.exports = {
       "4xl": "2.25rem",
       "37/16": "2.3125rem",
       "44/16": "2.75rem",
+      "45/16": "2.8125rem",
       "5xl": "3rem",
       "6xl": "4rem",
     },
     fontFamily: {
       lato: ["Lato", "sans-serif"],
-      roboto: ["Roboto", "sans-serif"],
+      "roboto-light": ["Roboto-Light", "sans-serif"],
+      "roboto-medium": ["Roboto-Medium", "sans-serif"],
+      "roboto-black": ["Roboto-Black", "sans-serif"],
     },
     textColor: (theme) => theme("colors"),
     opacity: {
@@ -117,8 +125,8 @@ module.exports = {
       150: "37.5rem",
       240: "60rem",
       300: "75rem",
-      "2/5": "24%",
-      "29/100": "29%",
+      "1/4": "25%",
+      "1/3": "33.3333%",
       ...breakpoints(theme("screens")),
     }),
     borderColor: (theme) => ({
@@ -133,22 +141,23 @@ module.exports = {
     padding: (theme) => ({
       ...theme("spacing"),
       auto: "auto",
+      "14/16": "0.875rem",
       31: "7.75rem",
     }),
     positions: {
-      bottom: 'bottom',
-      center: 'center',
-      left: 'left',
-      'left-bottom': 'left bottom',
-      'left-top': 'left top',
-      'left-center': 'left center',
-      right: 'right',
-      'right-bottom': 'right bottom',
-      'right-top': 'right top',
-      top: 'top',
-      '75-top': '75% top'
+      bottom: "bottom",
+      center: "center",
+      left: "left",
+      "left-bottom": "left bottom",
+      "left-top": "left top",
+      "left-center": "left center",
+      right: "right",
+      "right-bottom": "right bottom",
+      "right-top": "right top",
+      top: "top",
+      "75-top": "75% top",
     },
-    objectPosition: theme => theme('positions'),
+    objectPosition: (theme) => theme("positions"),
   },
   variants: {
     extend: {},
