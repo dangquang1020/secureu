@@ -41,9 +41,11 @@ interface ItemProps {
 
 const Item: React.FC<ItemProps> = ({ item, index }) => {
   return (
-    <div className={`flex items-baseline md:items-center mt-2 md:mt-4`}>
+    <div className={`flex items-start md:items-center mt-2 md:mt-4`}>
       <div
-        className={`relative top-6 md:-top-3 ${index === 1 ? "md:-top-6" : ""}`}
+        className={`relative top-3 ${
+          index === 1 ? "md:-top-5.5" : "md:-top-3"
+        }`}
       >
         <Image src={item.image} alt="Error" />
       </div>
@@ -51,7 +53,7 @@ const Item: React.FC<ItemProps> = ({ item, index }) => {
         <span className="text-37/16 md:text-44/16 font-roboto-light text-dark-light-blue">
           {item.title}
         </span>
-        <p className="text-14/16 md:text-base font-lato text-mercury mt-2">
+        <p className="text-14/16 md:text-base font-lato text-mercury mt-1">
           {item.content}
         </p>
       </div>
