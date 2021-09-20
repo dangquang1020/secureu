@@ -36,12 +36,15 @@ const ITEMS: Item[] = [
 
 interface ItemProps {
   item: Item;
+  index: number;
 }
 
-const Item: React.FC<ItemProps> = ({ item }) => {
+const Item: React.FC<ItemProps> = ({ item, index }) => {
   return (
     <div className={`flex items-baseline md:items-center mt-2 md:mt-4`}>
-      <div className="relative top-8 md:-top-2">
+      <div
+        className={`relative top-8 md:-top-3 ${index === 1 ? "md:-top-6" : ""}`}
+      >
         <Image src={item.image} alt="Error" />
       </div>
       <div className="max-w-52 md:max-w-xs ml-7">
@@ -73,7 +76,7 @@ const OurValues = () => {
         </span>
 
         {ITEMS.map((item, index) => (
-          <Item key={index} item={item} />
+          <Item key={index} item={item} index={index} />
         ))}
       </div>
     </Section>
