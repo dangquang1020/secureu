@@ -43,7 +43,7 @@ const Item: React.FC<ItemProps> = ({ item, index }) => {
   return (
     <div className={`flex items-baseline md:items-center mt-2 md:mt-4`}>
       <div
-        className={`relative top-8 md:-top-3 ${index === 1 ? "md:-top-6" : ""}`}
+        className={`relative top-6 md:-top-3 ${index === 1 ? "md:-top-6" : ""}`}
       >
         <Image src={item.image} alt="Error" />
       </div>
