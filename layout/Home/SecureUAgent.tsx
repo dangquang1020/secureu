@@ -51,7 +51,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
       <span className="mt-9 mb-4 text-lg md:text-21/16 font-roboto-medium">
         {item.title}
       </span>
-      <p className="text-14/16 md:text-base font-lato leading-snug">
+      <p className="text-14/16 md:text-base font-lato leading-snug max-w-72">
         {item.content}
       </p>
     </div>

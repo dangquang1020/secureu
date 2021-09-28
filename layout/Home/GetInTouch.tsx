@@ -4,6 +4,11 @@ import { Button } from "../../components/button/Button";
 import { Input } from "../../components/input";
 
 const GetInTouch = () => {
+  const handleSubmit = (e: any) => {
+    console.log('Form was submitted');
+    e.preventDefault();
+  }
+
   return (
     <Section className="bg-dark-blue py-16 md:py-24">
       <div className="max-w-150 mx-auto">
@@ -19,7 +24,7 @@ const GetInTouch = () => {
         </div>
 
         <div className="md:px-0 px-5">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5">
               <Input placeholder="FULL NAME" className="md:mb-0 mb-6" />
 

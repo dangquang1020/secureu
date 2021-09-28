@@ -13,7 +13,8 @@
     background-color: $main-red;
     &:hover,
     &:active {
-      background-color: $light-red;
+      // background-color: $light-red;
+      @apply bg-blue-500;
     }
   }
 

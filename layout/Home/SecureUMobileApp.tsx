@@ -16,7 +16,7 @@ const SecureUMobileApp = () => {
               title="SecureU Mobile App"
             />
             <SectionDescription
-              className="max-w-64"
+              className="max-w-72"
               description="The app is currently under construction and will be available for download soon."
             />
             <Button className="btn-danger mt-10 md:mt-14">DOWNLOAD APP</Button>
