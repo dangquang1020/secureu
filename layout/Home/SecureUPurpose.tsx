@@ -1,3 +1,4 @@
+import React, { Ref } from 'react'
 import Image from "next//image";
 import { ContentWrapper } from "../ContentWrapper";
 import { Section } from "../Section";
@@ -7,7 +8,7 @@ import ratingStar from "../../assets/images/rating-star-10x10.png";
 import videoPlaceholder from "../../assets/images/video-placeholder.png";
 import { Button } from "../../components/button/Button";
 
-const SecureUPurpose = () => {
+const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
   const bookNow = () => {
     console.log("Book Now");
   };
@@ -19,8 +20,8 @@ const SecureUPurpose = () => {
   return (
     <ContentWrapper className="flex-col items-start mt-14 md:mt-19 mb-18 md:mb-26">
       <Section className="flex flex-col md:flex-row">
-        <div className="lg:pt-12 md:w-6/12 lg:w-7/12">
-          <p className="font-roboto-medium text-26/16 lg:text-3xl text-light-blue lg:max-w-124">
+        <div className="lg:pt-12 md:w-6/12 lg:w-7/12" ref={ref}>
+          <p className="font-roboto-medium text-26/16 lg:text-3xl leading-8 lg:leading-extra-loose text-light-blue lg:max-w-124">
             Our agents are thoroughly vetted to provide a trustworthy
             experience.
           </p>
@@ -64,7 +65,7 @@ const SecureUPurpose = () => {
       </Section>
       <Section className="flex flex-col md:flex-row-reverse mt-14 lg:mt-7 items-center md:items-start md:justify-between">
         <div className="lg:pt-12">
-          <p className="font-roboto-medium text-26/16 lg:text-3xl text-light-blue md:max-w-96">
+          <p className="font-roboto-medium text-26/16 lg:text-3xl leading-8 lg:leading-extra-loose text-light-blue md:max-w-96">
             Why should I use SecureU? Your safety is our priority.
           </p>
           <p className="font-lato text-md lg:text-base text-dark-liver mt-4 mb-12 md:mb-0 md:max-w-96">
@@ -78,6 +79,6 @@ const SecureUPurpose = () => {
       </Section>
     </ContentWrapper>
   );
-};
+});
 
 export { SecureUPurpose };

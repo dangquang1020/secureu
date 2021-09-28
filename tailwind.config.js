@@ -14,18 +14,26 @@ module.exports = {
         "-100": "-100",
       },
       spacing: {
+        12: "3rem",
         17: "4.375rem",
         18: "4.5rem",
         19: "4.625rem",
         26: "6.5rem",
         30: "7.5rem",
+        30.5: "7.625rem",
+        44: "11rem",
         "14/100": "14%",
         "3/4": "75%",
         "3/5": "60%",
       },
       height: {
         2.5: "0.625rem",
+        11.5: "2.875rem",
+        12: "3rem",
+        12.5: "3.125rem",
         15: "3.75rem",
+        30.5: "7.625rem",
+        44: "11rem",
         50: "12.5rem",
         54: "13.5rem",
         58: "14.5rem",
@@ -36,10 +44,14 @@ module.exports = {
       },
       width: {
         2.5: "0.625rem",
+        11.5: "2.875rem",
+        12.5: "3.125rem",
         15: "3.75rem",
+        38.5: "9.625rem",
         50: "12.5rem",
         58: "14.5rem",
         100: "25rem",
+        300: "75rem",
       },
       boxShadow: {
         grey: "0 1px 3px rgba(119,119,119,0.5)",
@@ -47,28 +59,33 @@ module.exports = {
       gap: {
         92: "23rem",
       },
+      colors: {
+        transparent: "transparent",
+        white: "#fff",
+        dark: "#1D1E20",
+        mercury: "#E5E5E5",
+        salmon: "#ED796F",
+        "dark-blue": "#1D1D3F",
+        "light-blue": "#658DE4",
+        "dark-light-blue": "#598EEB",
+        "dark-liver": "#4F4F4F",
+        "dark-grey": "#777777",
+        "midnight-blue": "#1D1E3C",
+        "spun-pearl": "#9F9FAB",
+        graphite: "#100F24",
+      },
+      lineHeight: {
+        'extra-loose': '2.375rem',
+       }
     },
     screens: {
+      xxs: "320px",
       xs: "414px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
-    },
-    colors: {
-      transparent: "transparent",
-      white: "#fff",
-      dark: "#1D1E20",
-      mercury: "#E5E5E5",
-      salmon: "#ED796F",
-      "dark-blue": "#1D1D3F",
-      "light-blue": "#658DE4",
-      "dark-light-blue": "#598EEB",
-      "dark-liver": "#4F4F4F",
-      "dark-grey": "#777777",
-      "midnight-blue": "#1D1E3C",
-      "spun-pearl": "#9F9FAB",
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
@@ -100,6 +117,7 @@ module.exports = {
       "roboto-light": ["Roboto-Light", "sans-serif"],
       "roboto-medium": ["Roboto-Medium", "sans-serif"],
       "roboto-black": ["Roboto-Black", "sans-serif"],
+      "montserrat": ["Montserrat", "sans-serif"]
     },
     textColor: (theme) => theme("colors"),
     opacity: {
@@ -113,6 +131,9 @@ module.exports = {
       100: "1",
     },
     maxWidth: (theme, { breakpoints }) => ({
+      33.5: "8.375rem",
+      38.5: "9.625rem",
+      43: "10.75rem",
       52: "13rem",
       64: "16rem",
       72: "18rem",
@@ -158,6 +179,9 @@ module.exports = {
       "75-top": "75% top",
     },
     objectPosition: (theme) => theme("positions"),
+    letterSpacing: {
+      widest: '.125rem'
+    }
   },
   variants: {
     extend: {},
