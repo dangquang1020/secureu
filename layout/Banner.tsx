@@ -8,7 +8,13 @@ import { SectionDescription } from '../components/text/SectionDescription';
 import bannerBg from '../assets/images/banner-bg.png';
 import logo from '../assets/images/logo-white-trans.png';
 
-const Banner = () => {
+interface BannerProps {
+  onButtonClick?: Function
+}
+
+const Banner: React.FC<BannerProps> = ({
+  onButtonClick: goToAbout
+}) => {
   const title1 = "Personal safety on demand."
   const title2 = "Any time, anywhere."
   const description = "SecureU is an on demand safety app that allows users to order personal security agents for residential, business, private event(s), travel security, and asset security."
@@ -28,7 +34,7 @@ const Banner = () => {
         <SectionTitle title={title2} className={`mb-5 ${styles.title}`} />
         <SectionDescription description={description} className={styles.description} />
 
-        <Button className="btn-danger mt-10 lg:mt-14">Learn More</Button>
+        <Button className="btn-danger mt-10 lg:mt-14" onClick={goToAbout}>Learn More</Button>
       </ContentWrapper>
     </div>
   )

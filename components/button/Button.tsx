@@ -10,8 +10,15 @@ const Button: React.FC<IButtonProps> = ({
   onClick,
   ...props
 }) => {
+
+  const onButtonClick = (e: any) => {
+    if (onClick) {
+      onClick(e)
+    }
+  }
+
   return (
-    <button className={`button ${className}`} onClick={(e) => onClick ? onClick(e) : {}}>
+    <button className={`button ${className}`} onClick={onButtonClick}>
       {props.children}
     </button>
   );
