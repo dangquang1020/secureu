@@ -26,7 +26,7 @@ const ITEMS: Item[] = [
     title: "Instant pay option",
     image: CashPayment,
     content:
-      "Agents have the ability to get paid as soon as their detail has been completed and approved.",
+      "Agents have the ability to get paid as soon as their details has been completed and approved.",
     maxWidth: "lg:max-w-1/4 md:px-7 lg:px-0",
   },
   {
@@ -47,7 +47,9 @@ const Item: React.FC<ItemProps> = ({ item }) => {
     <div
       className={`flex flex-col items-center text-center text-dark-liver mb-12 mx-5 md:mx-0 md:mb-0 ${item.maxWidth}`}
     >
-      <Image src={item.image} alt="Error" />
+      <div className="w-21 h-21 lg:w-24 lg:h-24">
+        <Image src={item.image} alt="Error" />
+      </div>
       <span className="mt-9 mb-4 text-lg md:text-21/16 font-roboto-medium">
         {item.title}
       </span>
