@@ -43,9 +43,8 @@ const Item: React.FC<ItemProps> = ({ item, index }) => {
   return (
     <div className={`flex items-start md:items-center mt-2 md:mt-4`}>
       <div
-        className={`relative top-3 ${
-          index === 1 ? "md:-top-5.5" : "md:-top-3"
-        }`}
+        className={`relative top-3 ${index === 1 ? "md:-top-5.5" : "md:-top-3"
+          }`}
       >
         <Image src={item.image} alt="Error" />
       </div>
@@ -66,12 +65,15 @@ const OurValues = () => {
     <Section className="relative px-5 lg:px-0">
       <div className="-z-1 absolute w-full h-full top-0 left-0 bg-graphite">
         <div className="max-w-300 relative mx-auto h-full">
-          <Image
-            src={OurValuesBg}
-            alt="OurValuesBg"
-            layout="fill"
-            objectFit="cover"
-          />
+          <div className="w-full h-full -z-1">
+            <Image
+              src={OurValuesBg}
+              alt="OurValuesBg"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          <div className="hidden xl:block absolute top-0 left-0 h-full w-full right-gradient"></div>
         </div>
       </div>
 

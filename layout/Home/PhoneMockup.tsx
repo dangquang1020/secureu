@@ -66,21 +66,19 @@ const Item: React.FC<ItemProps> = ({
 }) => {
   return (
     <div
-      className={`relative text-white cursor-pointer mb-16 lg:mb-0 ${
-        !isSlider
+      className={`relative text-white cursor-pointer mb-16 lg:mb-0 ${!isSlider
           ? index === 0
             ? "lg:mr-14"
             : index === 2
-            ? "lg:mr-8"
-            : "lg:ml-4"
+              ? "lg:mr-8"
+              : "lg:ml-4"
           : ""
-      }`}
+        }`}
       {...props}
     >
       <span
-        className={`text-lg lg:text-21/16 font-roboto-medium ${
-          index === activeIndex ? "text-light-blue" : ""
-        }`}
+        className={`text-lg lg:text-21/16 font-roboto-medium ${index === activeIndex ? "text-light-blue" : ""
+          }`}
       >
         {item.title}
       </span>
@@ -148,7 +146,7 @@ const PhoneMockup = () => {
         </Swiper>
       </div>
 
-      <div className="relative flex justify-center lg:absolute lg:left-1/2 transform translate-y-14/100 -mt-24 lg:mt-0 lg:-translate-x-1/2 lg:-translate-y-2 lg:-top-24">
+      <div className="relative flex justify-center lg:absolute lg:left-1/2 transform translate-y-14/100 -mt-24 lg:mt-0 lg:-translate-x-1/2 lg:-translate-y-2 lg:-top-24 max-w-100">
         <Image src={ITEMS[activeIndex].mockup} alt="Phone" />
       </div>
     </Section>
