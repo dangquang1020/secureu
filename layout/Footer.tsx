@@ -36,7 +36,9 @@ const Footer = () => (
             </p>
           </div>
 
-          <Image className="rounded-full" src={Sholomi} alt="Sholomi" />
+          <div className="flex-87 lg:flex-100">
+            <Image className="rounded-full" src={Sholomi} alt="Sholomi" />
+          </div>
         </div>
 
         <div className="flex lg:justify-start justify-between lg:flex-col my-10 lg:my-0">

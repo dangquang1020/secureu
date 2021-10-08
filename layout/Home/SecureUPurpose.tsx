@@ -3,6 +3,7 @@ import Image from "next//image";
 import { ContentWrapper } from "../ContentWrapper";
 import { Section } from "../Section";
 
+import bgCircle from "../../assets/images/SecureU_circle1.png";
 import anthonyProfile from "../../assets/images/anthony-profile.png";
 import ratingStar from "../../assets/images/rating-star-10x10.png";
 import videoPlaceholder from "../../assets/images/video-placeholder.png";
@@ -31,7 +32,7 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
           </p>
         </div>
 
-        <div className="w-50 lg:w-58 h-50 lg:h-58 rounded-full mx-auto py-4 lg:py-5 shadow-grey relative overflow-hidden flex flex-col items-center">
+        {/* <div className="w-50 lg:w-58 h-50 lg:h-58 rounded-full mx-auto py-4 lg:py-5 shadow-grey relative overflow-hidden flex flex-col items-center">
           <div className="w-full h-9 lg:h-10 absolute left-0 top-0 bg-midnight-blue -z-1"></div>
           <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden">
             <Image src={anthonyProfile} alt="Error" />
@@ -60,6 +61,11 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
               reveal once you book them.
             </p>
             <p className="text-midnight-blue">Learn more</p>
+          </div>
+        </div> */}
+        <div className="flex-1 flex justify-center">
+          <div className="w-50 h-50 lg:h-58 lg:w-58">
+            <Image src={bgCircle} />
           </div>
         </div>
       </Section>
