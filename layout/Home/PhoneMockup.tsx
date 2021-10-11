@@ -146,7 +146,7 @@ const PhoneMockup = () => {
         </Swiper>
       </div>
 
-      <div className="relative flex justify-center lg:absolute lg:left-1/2 transform translate-y-14/100 -mt-24 lg:mt-0 lg:-translate-x-1/2 lg:-translate-y-2 lg:-top-24 max-w-100">
+      <div className="relative flex justify-center lg:absolute lg:left-1/2 transform translate-y-14/100 -mt-24 lg:mt-0 lg:-translate-x-1/2 lg:-translate-y-2 lg:-top-24 max-w-100 mx-auto">
         <Image src={ITEMS[activeIndex].mockup} alt="Phone" />
       </div>
     </Section>

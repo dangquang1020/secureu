@@ -7,7 +7,7 @@ import background from "../../assets/images/mobile-app-bg.png";
 
 const SecureUMobileApp = () => {
   return (
-    <Section className="bg-midnight-blue w-full">
+    <Section className="bg-midnight-blue w-full relative">
       <div className="max-w-300 lg:pl-20 xl:pl-30 mx-auto h-auto lg:h-124">
         <div className="w-full h-full flex flex-col md:flex-row">
           <div className="w-full md:w-5/12 pl-5 lg:pl-0 flex flex-col items-start justify-center mt-14 mb-17">
@@ -21,7 +21,7 @@ const SecureUMobileApp = () => {
             />
             <Button className="btn-danger mt-10 md:mt-14">DOWNLOAD APP</Button>
           </div>
-          <div className="w-full md:w-7/12 pt-3/4 xs:pt-3/5 md:pt-0 sm relative md:ml-14">
+          <div className="w-full pt-3/4 xs:pt-3/5 relative md:pt-0 md:absolute md:w-1/2 md:h-full md:left-1/2">
             <Image
               src={background}
               layout="fill"
