@@ -28,7 +28,7 @@ export default function handler(
     subject: `${req.body.subject || 'SecureU - Get in touch'}`,
     text: req.body.message,
     html: `
-      <div><strong>Full name:</strong> ${req.body.fullName}</div>
+      <div><strong>Full name:</strong> ${req.body.name}</div>
       <div><strong>Phone:</strong> ${req.body.phone}</div>
       <div><strong>Email:</strong> ${req.body.email}</div>
       <div>${req.body.message}</div>
