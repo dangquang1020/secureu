@@ -2,12 +2,14 @@ import React from 'react'
 
 interface IButtonProps {
   className?: string;
-  onClick?: Function
+  onClick?: Function,
+  disabled: boolean
 };
 
 const Button: React.FC<IButtonProps> = ({
   className = '',
   onClick,
+  disabled = false,
   ...props
 }) => {
 
@@ -18,7 +20,7 @@ const Button: React.FC<IButtonProps> = ({
   }
 
   return (
-    <button className={`button ${className}`} onClick={onButtonClick}>
+    <button className={`button ${className}`} onClick={onButtonClick} disabled={disabled}>
       {props.children}
     </button>
   );
