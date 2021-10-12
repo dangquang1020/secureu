@@ -27,7 +27,7 @@ const SecureUMobileApp = () => {
               layout="fill"
               objectFit="cover"
               className="object-75-top lg:object-center"
-              alt="Error"
+              alt="Mobile App"
             />
           </div>
         </div>

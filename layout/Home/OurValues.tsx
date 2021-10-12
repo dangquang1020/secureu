@@ -46,7 +46,7 @@ const Item: React.FC<ItemProps> = ({ item, index }) => {
         className={`relative top-3 ${index === 1 ? "md:-top-5.5" : "md:-top-3"
           }`}
       >
-        <Image src={item.image} alt="Error" />
+        <Image src={item.image} alt="Shield Icon" />
       </div>
       <div className="max-w-52 md:max-w-xs ml-5 md:ml-7">
         <span className="text-37/16 md:text-44/16 font-roboto-light text-dark-light-blue">

@@ -48,7 +48,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
       className={`flex flex-col items-center text-center text-dark-liver mb-12 mx-5 md:mx-0 md:mb-0 ${item.maxWidth}`}
     >
       <div className="w-21 h-21 lg:w-24 lg:h-24">
-        <Image src={item.image} alt="Error" />
+        <Image src={item.image} alt="Value Icon" />
       </div>
       <span className="mt-9 mb-4 text-lg md:text-21/16 font-roboto-medium">
         {item.title}

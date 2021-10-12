@@ -22,12 +22,12 @@ const Banner: React.FC<BannerProps> = ({
   return (
     <div className="relative py-5 lg:py-20 h-152 lg:h-168">
       <div className={`-z-1 absolute w-full h-full top-0 left-0`}>
-        <Image src={bannerBg} layout="fill" objectFit="cover" className="object-75-top lg:object-left-center" />
+        <Image src={bannerBg} layout="fill" objectFit="cover" className="object-75-top lg:object-left-center" alt="SecureU Banner" />
       </div>
 
       <ContentWrapper className="flex-col items-start">
         <div className={styles.logo}>
-          <Image src={logo} layout='intrinsic' />
+          <Image src={logo} layout='intrinsic' alt="SecureU Logo" />
         </div>
 
         <SectionTitle title={title1} className={`mt-8 lg:mt-20 ${styles.title}`} />

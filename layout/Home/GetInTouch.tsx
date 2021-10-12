@@ -109,7 +109,7 @@ const GetInTouch = () => {
 
               <Button className="btn-danger relative flex items-center" disabled={loading}>
                 <div className={`absolute left-2 ${loading ? 'block' : 'hidden'}`}>
-                  <Image src={Loader} width="30" height="30" />
+                  <Image src={Loader} width="30" height="30" alt="Loader" />
                 </div>
                 Submit
               </Button>

@@ -65,7 +65,7 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
         </div> */}
         <div className="flex-1 flex justify-center">
           <div className="w-50 h-50 lg:h-58 lg:w-58">
-            <Image src={bgCircle} />
+            <Image src={bgCircle} alt="SecureU Agent" />
           </div>
         </div>
       </Section>
@@ -80,7 +80,7 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
           </p>
         </div>
         <div className="w-72 lg:w-100 h-40 lg:h-54 lg:m-0">
-          <Image src={videoPlaceholder} layout="responsive" alt="Error" />
+          <Image src={videoPlaceholder} layout="responsive" alt="Video Placeholder" />
         </div>
       </Section>
     </ContentWrapper>
