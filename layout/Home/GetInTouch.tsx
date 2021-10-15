@@ -19,6 +19,8 @@ const GetInTouch = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
+    setError(false)
+
     if (loading || name == '' || phone == '' || email == '' || nameRequired || phoneRequired || emailRequired) {
       if (name.trim() == '') {
         setNameRequired(true)
@@ -71,52 +73,64 @@ const GetInTouch = () => {
 
   return (
     <Section className="bg-dark-blue py-16 md:py-24">
-      <div className="max-w-150 mx-auto">
-        <div className="text-white text-center">
-          <span className="text-26/16 md:text-3xl font-roboto-medium">
-            Get in touch
-          </span>
-          <p className="text-14/16 md:text-base mt-8 mb-16 mx-5 md:mx-16 font-lato leading-snug">
-            If you have any questions please reach out to us directly through
-            the website or mobile app. Ask about our vetting process, how to
-            sign up as an agent, become a client and more.
+      {
+        !submitted &&
+        <div className="max-w-150 mx-auto">
+          <div className="text-white text-center">
+            <span className="text-26/16 md:text-3xl font-roboto-medium">
+              Get in touch
+            </span>
+            <p className="text-14/16 md:text-base mt-8 mb-16 mx-5 md:mx-16 font-lato leading-snug">
+              If you have any questions please reach out to us directly through
+              the website or mobile app. Ask about our vetting process, how to
+              sign up as an agent, become a client and more.
+            </p>
+          </div>
+
+          <div className="md:px-0 px-5">
+            <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5">
+                <Input placeholder="*FULL NAME" className={`md:mb-0 mb-6`} {...bindName} required={nameRequired} />
+
+                <Input placeholder="*PHONE NUMBER" {...bindPhone} required={phoneRequired} />
+              </div>
+
+              <Input placeholder="*EMAIL" className={`my-6`} {...bindEmail} required={emailRequired} />
+
+              <Input placeholder="SUBJECT TITLE" {...bindSubject} />
+
+              <Input
+                placeholder="WRITE YOUR MESSAGE HERE"
+                variant="textarea"
+                className="mt-6"
+                rows={4}
+                {...bindMessage}
+              />
+
+              <div className="flex flex-col items-center justify-center mt-12 md:mt-24 relative">
+                {error && <div className={`text-red-400 mb-4 absolute -top-9 lg:-top-11`}>Error, please try again.</div>}
+                <Button className="btn-danger relative flex items-center" disabled={loading}>
+                  <div className={`absolute left-2 ${loading ? 'block' : 'hidden'}`}>
+                    <Image src={Loader} width="30" height="30" alt="Loader" />
+                  </div>
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      }
+      {
+        submitted &&
+        <div className={`text-white text-center py-64 lg:py-71`}>
+          <h3 className="text-21/16 lg:text-26/16">Your message has been sent.</h3>
+          <p className="text-xs mt-5">
+            Thank you for contacting SecureU.
+            <br />
+            We'll be in touch with you soon.
           </p>
         </div>
-
-        <div className="md:px-0 px-5">
-          <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5">
-              <Input placeholder="*FULL NAME" className={`md:mb-0 mb-6`} {...bindName} required={nameRequired} />
-
-              <Input placeholder="*PHONE NUMBER" {...bindPhone} required={phoneRequired} />
-            </div>
-
-            <Input placeholder="*EMAIL" className={`my-6`} {...bindEmail} required={emailRequired} />
-
-            <Input placeholder="SUBJECT TITLE" {...bindSubject} />
-
-            <Input
-              placeholder="WRITE YOUR MESSAGE HERE"
-              variant="textarea"
-              className="mt-6"
-              rows={4}
-              {...bindMessage}
-            />
-
-            <div className="flex flex-col items-center justify-center mt-12 md:mt-24">
-              {error && <div className={`text-red-400 mb-4`}>Error, please try again.</div>}
-              {submitted && <div className={`text-white mb-4`}>Sent! we’ll be in touch…</div>}
-
-              <Button className="btn-danger relative flex items-center" disabled={loading}>
-                <div className={`absolute left-2 ${loading ? 'block' : 'hidden'}`}>
-                  <Image src={Loader} width="30" height="30" alt="Loader" />
-                </div>
-                Submit
-              </Button>
-            </div>
-          </form>
-        </div>
-      </div>
+      }
     </Section>
   );
 };

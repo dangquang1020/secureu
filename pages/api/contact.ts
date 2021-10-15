@@ -23,7 +23,7 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   const mailData = {
-    from: process.env.EMAIL,
+    from: `SecureU <${process.env.EMAIL}>`,
     to: process.env.CONTACT_EMAIL,
     subject: `${req.body.subject || 'SecureU - Get in touch'}`,
     text: req.body.message,
