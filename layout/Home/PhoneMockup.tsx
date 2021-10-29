@@ -1,7 +1,8 @@
 import React, { AllHTMLAttributes } from "react";
 import Image from "next/image";
-import SwiperCore, { Pagination, Autoplay } from "swiper";
+import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css/navigation';
 
 import { Section } from "../Section";
 
@@ -10,7 +11,7 @@ import AgentMapping from "../../assets/images/SecureU_PhoneMockup_AgentMapping.p
 import AgentSelection from "../../assets/images/SecureU_PhoneMockup_AgentSelection.png";
 import AgentCredentials from "../../assets/images/SecureU_PhoneMockup_AgentCredentials.png";
 
-SwiperCore.use([Pagination, Autoplay]);
+SwiperCore.use([Pagination, Navigation, Autoplay]);
 
 interface Item {
   title: string;
@@ -126,6 +127,7 @@ const PhoneMockup = () => {
           loop={true}
           centeredSlides={true}
           pagination={pagination}
+          navigation
           // autoplay={{
           //   delay: 5000,
           //   disableOnInteraction: false,

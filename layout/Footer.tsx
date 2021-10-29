@@ -5,8 +5,9 @@ import { ContentWrapper } from "./ContentWrapper";
 
 import Logo from "../assets/images/log-white-trans.png";
 import Sholomi from "../assets/images/sholomi-pic.png";
-import GGPlay from "../assets/images/google-play-store.png";
 import AppStore from "../assets/images/apple-store.png";
+import Instagram from "../assets/icons/IG.png";
+import Twitter from "../assets/icons/TW.png";
 
 const Footer = () => (
   <Section>
@@ -42,11 +43,16 @@ const Footer = () => (
         </div>
 
         <div className="flex lg:justify-start justify-between lg:flex-col my-10 lg:my-0">
-          <div className="max-w-33.5 xs:max-w-38.5 lg:max-w-43">
-            <Image src={GGPlay} alt="Logo" />
+          <div className="max-w-33.5 xs:max-w-38.5 lg:max-w-43 flex items-center justify-center">
+            <div className="pr-2">
+              <Image src={Twitter} alt="Twitter" width="35" height="28" />
+            </div>
+            <div className="pl-2">
+              <Image src={Instagram} alt="Instagram" width="30" height="30" />
+            </div>
           </div>
           <div className="max-w-33.5 xs:max-w-38.5 lg:max-w-43 lg:mt-4">
-            <Image src={AppStore} alt="Logo" />
+            <Image src={AppStore} alt="AppStore" />
           </div>
         </div>
       </ContentWrapper>
