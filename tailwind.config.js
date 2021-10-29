@@ -86,6 +86,7 @@ module.exports = {
       },
       lineHeight: {
         'extra-loose': '2.375rem',
+        '11.5': '2.875rem',
       },
       opacity: ['disabled'],
     },
@@ -118,6 +119,7 @@ module.exports = {
       "3xl": "1.875rem",
       "4xl": "2.25rem",
       "37/16": "2.3125rem",
+      "38/16": "2.375rem",
       "44/16": "2.75rem",
       "45/16": "2.8125rem",
       "5xl": "3rem",

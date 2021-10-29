@@ -29,9 +29,8 @@ const Banner: React.FC<BannerProps> = ({
         <div className={styles.logo}>
           <Image src={logo} layout='intrinsic' alt="SecureU Logo" />
         </div>
-
-        <SectionTitle title={title1} className={`mt-8 lg:mt-20 ${styles.title}`} />
-        <SectionTitle title={title2} className={`mb-5 ${styles.title}`} />
+        <h2 className={`mt-8 lg:mt-20 text-white text-38/16 leading-11.5 font-lato font-semibold max-w-72`}>{title1}</h2>
+        <h2 className={`mb-5 text-white text-38/16 leading-11.5 font-lato font-semibold max-w-72`}>{title2}</h2>
         <SectionDescription description={description} className={styles.description} />
 
         <Button className="btn-danger mt-10 lg:mt-14" onClick={goToAbout}>Learn More</Button>
