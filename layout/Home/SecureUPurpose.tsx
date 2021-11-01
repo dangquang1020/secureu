@@ -22,7 +22,7 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
     <ContentWrapper className="flex-col items-start mt-14 md:mt-19 mb-18 md:mb-26">
       <Section className="flex flex-col md:flex-row">
         <div className="lg:pt-12 md:w-6/12 lg:w-7/12" ref={ref}>
-          <p className="font-roboto-medium text-26/16 lg:text-3xl leading-8 lg:leading-extra-loose text-light-blue lg:max-w-124">
+          <p className="font-lato font-bold text-26/16 lg:text-3xl leading-8 lg:leading-extra-loose text-light-blue lg:max-w-124">
             Our agents are thoroughly vetted to provide a trustworthy
             experience.
           </p>
@@ -32,37 +32,6 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
           </p>
         </div>
 
-        {/* <div className="w-50 lg:w-58 h-50 lg:h-58 rounded-full mx-auto py-4 lg:py-5 shadow-grey relative overflow-hidden flex flex-col items-center">
-          <div className="w-full h-9 lg:h-10 absolute left-0 top-0 bg-midnight-blue -z-1"></div>
-          <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden">
-            <Image src={anthonyProfile} alt="Error" />
-          </div>
-          <div className="font-lato font-bold text-sm lg:text-xs leading-3 text-midnight-blue mt-1 lg:mt-2">
-            Anthony Rosavio
-          </div>
-          <div className="flex font-lato text-sm items-center leading-3 mt-1 lg:mt-2">
-            <div className="w-3 h-3 mr-2">
-              <Image src={ratingStar} alt="Error" />
-            </div>
-            <span className="text-light-blue">125 ratings &nbsp;</span>
-            <span className="text-midnight-blue font-bold">(4.5/5)</span>
-          </div>
-          <div className="flex items-center mt-2 lg:mt-3">
-            <Button className="btn-primary mr-2" onClick={bookNow}>
-              BOOK NOW
-            </Button>
-            <Button className="btn-default" onClick={schedule}>
-              SCHEDULE
-            </Button>
-          </div>
-          <div className="font-lato font-bold text-xxs leading-3 text-center mt-3 lg:mt-5 w-4/5">
-            <p className="text-spun-pearl">
-              To protect our agent privacy, their full name and profile will
-              reveal once you book them.
-            </p>
-            <p className="text-midnight-blue">Learn more</p>
-          </div>
-        </div> */}
         <div className="flex-1 flex justify-center">
           <div className="w-50 h-50 lg:h-58 lg:w-58">
             <Image src={bgCircle} alt="SecureU Agent" />
@@ -71,7 +40,7 @@ const SecureUPurpose = React.forwardRef((props, ref: Ref<HTMLDivElement>) => {
       </Section>
       <Section className="flex flex-col md:flex-row-reverse mt-14 lg:mt-7 items-center md:items-start md:justify-between">
         <div className="lg:pt-12">
-          <p className="font-roboto-medium text-26/16 lg:text-3xl leading-8 lg:leading-extra-loose text-light-blue md:max-w-96">
+          <p className="font-lato font-bold text-26/16 lg:text-3xl leading-8 lg:leading-extra-loose text-light-blue md:max-w-96">
             Why should I use SecureU? Your safety is our priority.
           </p>
           <p className="font-lato text-md lg:text-base text-dark-liver mt-4 mb-12 md:mb-0 md:max-w-96">

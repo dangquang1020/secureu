@@ -78,7 +78,7 @@ const OurValues = () => {
       </div>
 
       <div className="py-16 md:py-31 ml-31 max-w-screen-lg mx-auto lg:pl-8 z-0">
-        <span className="text-white text-26/16 md:text-3xl font-roboto-medium">
+        <span className="text-white text-26/16 md:text-3xl font-lato font-bold">
           Our values are:
         </span>
 
