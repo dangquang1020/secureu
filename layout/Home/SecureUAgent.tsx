@@ -50,7 +50,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
       <div className="w-21 h-21 lg:w-24 lg:h-24">
         <Image src={item.image} alt="Value Icon" />
       </div>
-      <span className="mt-9 mb-4 text-lg md:text-21/16 font-roboto-medium">
+      <span className="mt-9 mb-4 text-lg md:text-21/16 font-lato font-bold">
         {item.title}
       </span>
       <p className="text-14/16 md:text-base font-lato leading-snug max-w-72">
@@ -63,7 +63,7 @@ const Item: React.FC<ItemProps> = ({ item }) => {
 const SecureUAgent = () => {
   return (
     <Section className="max-w-screen-lg text-center pt-28 md:pt-31 md:px-0">
-      <span className="text-26/16 px-2 md:text-3xl text-light-blue font-roboto-medium">
+      <span className="text-26/16 px-2 md:text-3xl text-light-blue font-lato font-bold">
         Want to be a SecureU agent?
       </span>
 
