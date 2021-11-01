@@ -77,7 +77,7 @@ const GetInTouch = () => {
         !submitted &&
         <div className="max-w-150 mx-auto">
           <div className="text-white text-center">
-            <span className="text-26/16 md:text-3xl font-roboto-medium">
+            <span className="text-26/16 md:text-3xl font-lato font-bold">
               Get in touch
             </span>
             <p className="text-14/16 md:text-base mt-8 mb-16 mx-5 md:mx-16 font-lato leading-snug">
