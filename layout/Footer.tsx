@@ -45,10 +45,14 @@ const Footer = () => (
         <div className="flex lg:justify-start justify-between lg:flex-col my-10 lg:my-0">
           <div className="max-w-33.5 xs:max-w-38.5 lg:max-w-43 flex items-center justify-center">
             <div className="pr-2">
-              <Image src={Twitter} alt="Twitter" width="35" height="28" />
+              <a href="https://twitter.com/secureu_" target="_blank" rel="noreferrer">
+                <Image src={Twitter} alt="Twitter" width="35" height="28" />
+              </a>
             </div>
             <div className="pl-2">
-              <Image src={Instagram} alt="Instagram" width="30" height="30" />
+              <a href="https://www.instagram.com/secureu_/" target="_blank" rel="noreferrer">
+                <Image src={Instagram} alt="Instagram" width="30" height="30" />
+              </a>
             </div>
           </div>
           <div className="max-w-33.5 xs:max-w-38.5 lg:max-w-43 lg:mt-4">
