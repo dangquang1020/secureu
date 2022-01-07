@@ -127,7 +127,7 @@ const GetInTouch = () => {
           <p className="text-xs mt-5">
             Thank you for contacting SecureU.
             <br />
-            We'll be in touch with you soon.
+            We&apos;ll be in touch with you soon.
           </p>
         </div>
       }
